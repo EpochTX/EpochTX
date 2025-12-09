@@ -1,13 +1,13 @@
 <div align="center">
 
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&center=true&vCenter=true&width=720&lines=Hi%2C+I%27m+zjt666666zjt+%F0%9F%91%8B;Keep+learning%2C+stay+curious+%E2%9C%A8;Frontend+%2B+Backend+Explorer+%F0%9F%9A%80"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&center=true&vCenter=true&width=720&lines=Hi%2C+I%27m+epochtx+%F0%9F%91%8B;Keep+learning%2C+stay+curious+%E2%9C%A8;Frontend+%2B+Backend+Explorer+%F0%9F%9A%80"
     alt="Typing SVG"
   />
 
   <br><br>
 
-  <img src="https://cdn.jsdelivr.net/gh/zjt666666zjt/zjt666666zjt/assets/images/coding.gif" width="260" alt="coding gif" />
+  <img src="https://cdn.jsdelivr.net/gh/epochtx/epochtx/assets/images/coding.gif" width="260" alt="coding gif" />
 
   <br><br>
 
@@ -20,7 +20,7 @@
   <a href="https://www.instagram.com/epochTX_/">
     <img src="https://img.shields.io/badge/Instagram-@epochTX_-orange?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=zjt666666zjt&label=Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=epochtx&label=Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 
 </div>
 
@@ -59,8 +59,6 @@
 - [ ] 学会 Node.js + 基础后端接口（REST）
 - [ ] 用 TypeScript 重构一个项目
 - [ ] 做一个 Python 自动化/数据可视化小工具
-
----
 
 
 > 💡 “代码不只是工具，它也是一种表达。”
