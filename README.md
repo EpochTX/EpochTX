@@ -20,6 +20,9 @@
 
 ---
 
+<p align="center">📚 <strong>备战考研中！</strong></p>
+
+---
 ## 👋 About Me
 
 - 🌱 喜欢学习新技术，目前在探索前端与后端的结合  
