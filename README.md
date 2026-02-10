@@ -20,7 +20,6 @@
 
 ---
 
-<p align="center">📚 <strong>备战考研中！(考研失败)</strong></p>
 
 ---
 ## 👋 About Me
