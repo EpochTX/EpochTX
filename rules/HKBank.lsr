@@ -1,0 +1,133 @@
+# HKBank.lsr
+# Hong Kong bank routing rules for Loon
+# Updated: 2026-08-08
+#
+# Scope:
+# - Hong Kong consumer-facing retail banks and digital banks.
+# - Current official bank domains, plus a small number of bank-specific app/support endpoints
+#   cross-checked against maintained HK bank rulesets.
+# - Policy is intentionally omitted. Assign this remote ruleset to your HK-bank/HK policy in Loon.
+# - Generic shared analytics/CDN/cloud-ASN rules are intentionally excluded to avoid routing
+#   unrelated apps through the bank policy.
+
+# ==================== Major / retail banks ====================
+
+# HSBC Hong Kong / 香港汇丰
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hk.hsbc.com
+# HSBC-owned HK cloud namespace used by HK services
+DOMAIN-SUFFIX,vam-hk.cloud1.vv1865.com
+
+# Hang Seng Bank / 恒生银行
+DOMAIN-SUFFIX,hangseng.com
+
+# Bank of China (Hong Kong) / 中国银行（香港）
+DOMAIN-SUFFIX,bochk.com
+# BOC Credit Card (International) / BOCHK card services
+DOMAIN-SUFFIX,boccc.com.hk
+# Known BOCHK market-data endpoints used by app/services
+DOMAIN,bochk01.etnet.com.hk
+DOMAIN,bochk02.etnet.com.hk
+DOMAIN,bochkapp01.etnet.com.hk
+DOMAIN,bochk.yundzh.com
+DOMAIN,saaszhhk.yundzh.com
+
+# Bank of East Asia / 东亚银行
+DOMAIN-SUFFIX,hkbea.com
+
+# Standard Chartered Hong Kong / 渣打香港
+# sc.com is the bank's global domain; Hong Kong services are under sc.com/hk.
+DOMAIN-SUFFIX,sc.com
+# Legacy/compatibility domain still referenced by SC Hong Kong
+DOMAIN-SUFFIX,sc.com.hk
+
+# Citibank Hong Kong / 花旗香港
+DOMAIN-SUFFIX,citibank.com.hk
+
+# DBS Hong Kong / 星展香港
+DOMAIN-SUFFIX,dbs.com.hk
+
+# China Construction Bank (Asia) / 中国建设银行（亚洲）
+DOMAIN-SUFFIX,asia.ccb.com
+
+# ICBC (Asia) / 中国工商银行（亚洲）
+DOMAIN-SUFFIX,icbcasia.com
+
+# Bank of Communications (Hong Kong) / 交通银行（香港）
+DOMAIN-SUFFIX,bankcomm.com.hk
+
+# China CITIC Bank International / 中信银行（国际） - inMotion
+DOMAIN-SUFFIX,cncbinternational.com
+
+# CMB Wing Lung Bank / 招商永隆银行
+DOMAIN-SUFFIX,cmbwinglungbank.com
+
+# OCBC Bank (Hong Kong) / 华侨银行（香港）
+DOMAIN-SUFFIX,ocbc.com.hk
+# Legacy/mobile domain still used by OCBC Hong Kong
+DOMAIN-SUFFIX,ocbcwhhk.com
+
+# Nanyang Commercial Bank / 南洋商业银行
+DOMAIN-SUFFIX,ncb.com.hk
+
+# Chiyu Banking Corporation / 集友银行
+DOMAIN-SUFFIX,chiyubank.com
+
+# Chong Hing Bank / 创兴银行
+DOMAIN-SUFFIX,chbank.com
+
+# Dah Sing Bank / 大新银行
+DOMAIN-SUFFIX,dahsing.com
+
+# Fubon Bank (Hong Kong) / 富邦银行（香港）
+DOMAIN-SUFFIX,fubonbank.com.hk
+
+# Public Bank (Hong Kong) / 大众银行（香港）
+DOMAIN-SUFFIX,publicbank.com.hk
+
+# Shanghai Commercial Bank / 上海商业银行
+DOMAIN-SUFFIX,shacombank.com.hk
+
+# Bank of Shanghai (Hong Kong) / 上海银行（香港）
+DOMAIN-SUFFIX,bankofshanghai.com.hk
+
+# Bank of Dongguan International / 东莞银行（国际）
+DOMAIN-SUFFIX,bodintl.com
+
+# Tai Sang Bank / 大生银行
+DOMAIN-SUFFIX,taisangbank.com.hk
+
+# Tai Yau Bank / 大有银行
+DOMAIN-SUFFIX,tybhk.com.hk
+
+# ==================== Hong Kong digital banks ====================
+
+# EleBank / 象象银行 (formerly Airstar Bank / 天星银行)
+DOMAIN-SUFFIX,elebank.com
+# Legacy domain retained for transition/back-end compatibility
+DOMAIN-SUFFIX,airstarbank.com
+
+# Ant Bank (Hong Kong) / 蚂蚁银行（香港）
+DOMAIN-SUFFIX,antbank.hk
+
+# Fusion Bank / 富融银行
+DOMAIN-SUFFIX,fusionbank.com
+
+# livi bank / livi理慧银行
+DOMAIN-SUFFIX,livibank.com
+
+# Mox Bank
+DOMAIN-SUFFIX,mox.com
+
+# PAO Bank / 平安壹账通银行
+DOMAIN-SUFFIX,paob.com.hk
+
+# WeLab Bank / 汇立银行
+DOMAIN-SUFFIX,welab.bank
+
+# ZA Bank / 众安银行
+DOMAIN-SUFFIX,za.group
+# ZA-owned investment / telemetry / static-resource domains used by ZA services
+DOMAIN-SUFFIX,zainvest.group
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zaticdn.com
