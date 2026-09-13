@@ -18,7 +18,7 @@
 
 ### Links
 
-[Bilibili](https://space.bilibili.com/475622047) · [X / Twitter](https://twitter.com/choukingsum)
+[Bilibili](https://space.bilibili.com/475622047) · [X / Twitter](https://twitter.com/choukingsum) · [Email](mailto:admin@epochtxsub.com)
 
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=epochtx&label=views&color=grey&style=flat" alt="Profile views" />
