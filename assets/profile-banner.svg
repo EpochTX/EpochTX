@@ -25,20 +25,18 @@
   <g transform="translate(92 67)">
     <rect x="0" y="0" width="8" height="186" rx="4" fill="url(#accent)"/>
     <text x="36" y="56" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="54" font-weight="700" letter-spacing="0.5">EpochTX</text>
-    <text x="39" y="101" fill="#A7B0C5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="22" font-weight="500">AI Agent · Developer Tools · Open Source</text>
-    <text x="39" y="150" fill="#D8DEE9" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="18">Building useful things, one commit at a time.</text>
+    <text x="39" y="101" fill="#A7B0C5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="22" font-weight="500">Developer · Open Source · Tinkering</text>
+    <text x="39" y="150" fill="#D8DEE9" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="18">code, tools, web, and whatever looks interesting.</text>
   </g>
 
-  <g transform="translate(720 74)">
-    <rect width="390" height="176" rx="18" fill="#090D18" stroke="#FFFFFF" stroke-opacity="0.10"/>
-    <rect width="390" height="42" rx="18" fill="#121827"/>
-    <path d="M0 42H390" stroke="#FFFFFF" stroke-opacity="0.07"/>
-    <circle cx="24" cy="21" r="5" fill="#FB7185"/>
-    <circle cx="43" cy="21" r="5" fill="#FBBF24"/>
-    <circle cx="62" cy="21" r="5" fill="#34D399"/>
-    <text x="24" y="83" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="16">$ current_project</text>
-    <text x="24" y="116" fill="#E2E8F0" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="20" font-weight="700">SkillBench</text>
-    <text x="24" y="145" fill="#7DD3FC" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="15">benchmark · lint · compatibility</text>
-    <rect x="24" y="158" width="7" height="2" fill="#A78BFA"/>
+  <g transform="translate(760 88)">
+    <rect width="320" height="144" rx="18" fill="#090D18" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <rect width="320" height="40" rx="18" fill="#121827"/>
+    <path d="M0 40H320" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <circle cx="22" cy="20" r="5" fill="#FB7185"/>
+    <circle cx="41" cy="20" r="5" fill="#FBBF24"/>
+    <circle cx="60" cy="20" r="5" fill="#34D399"/>
+    <text x="22" y="82" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="16">$ hello</text>
+    <text x="22" y="116" fill="#E2E8F0" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace" font-size="18">building things I want to use</text>
   </g>
 </svg>
