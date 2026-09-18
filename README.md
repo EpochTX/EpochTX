@@ -5,7 +5,7 @@
 ## Hi, I'm EpochTX 👋
 
 
-主要用 **TypeScript / JavaScript / Node.js**，也会用 **React、Python**。比起做很大的项目，我更喜欢把一些自己真正会用到的小东西慢慢做顺手。
+主要用 **TypeScript / JavaScript / Node.js**，也会用 **React、Python**。
 
 
 
