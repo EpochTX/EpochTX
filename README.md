@@ -2,30 +2,51 @@
   <img src="./assets/profile-banner.svg" width="100%" alt="EpochTX profile banner" />
 </p>
 
-## Hi, I'm EpochTX 👋
+<h1 align="center">Hi, I'm EpochTX 👋</h1>
 
-主要用 **TypeScript / JavaScript / Node.js**，也会用 **React、Python**。这里整理我的开源工具、网页实验和研究笔记。
+<p align="center">
+  Building practical tools, browser experiments and open-source projects with
+  <strong>TypeScript / JavaScript / Node.js</strong>, plus <strong>React</strong> and <strong>Python</strong>.
+</p>
 
-[个人网站](https://epochtxhub.com) · [Bilibili](https://space.bilibili.com/475622047) · [X / Twitter](https://twitter.com/choukingsum) · [Email](mailto:admin@epochtxhub.com)
+<p align="center">
+  <a href="https://epochtxhub.com">Website</a> ·
+  <a href="https://space.bilibili.com/475622047">Bilibili</a> ·
+  <a href="https://twitter.com/choukingsum">X / Twitter</a> ·
+  <a href="mailto:admin@epochtxhub.com">Email</a>
+</p>
 
-### 工具与实验
+---
 
-| 项目 | 内容 |
+### 🧰 Tech
+
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" />
+</p>
+
+### 🚀 Featured projects
+
+| Project | What it does |
 | --- | --- |
-| [SkillBench](https://github.com/EpochTX/skillbench) | AI Agent 指令与 Skills 的静态检查、安全分析和兼容性评估 |
-| [Internet Chaos Simulator](https://github.com/EpochTX/Internet-Chaos-Simulator) | 用 Service Worker 模拟延迟、限速和请求失败的浏览器实验室 |
-| [Step Keeper](https://github.com/EpochTX/Step-keeper) | 面向个人 Zepp Life 账号的步数控制台 |
-| [OpenAIsm](https://github.com/EpochTX/OpenAIsm) | 对比 ChatGPT 请求与响应中模型标记的用户脚本 |
+| **[SkillBench](https://github.com/EpochTX/skillbench)** | Open-source benchmark, linter and cross-agent compatibility checker for AI Agent Skills and instruction files. |
+| **[ChatGPT Exporter](https://github.com/EpochTX/ChatGPT_Exporter)** | Export ChatGPT conversations to JSON / Markdown / HTML and package them locally as ZIP archives. |
+| **[Internet Chaos Simulator](https://github.com/EpochTX/Internet-Chaos-Simulator)** | Browser lab for testing interfaces under latency, packet loss, DNS failures, bandwidth limits and HTTP errors. |
+| **[Step Keeper](https://github.com/EpochTX/Step-keeper)** | Personal Zepp Life step console with range controls, confirmation flow and server-side submission. |
+| **[OpenAIsm](https://github.com/EpochTX/OpenAIsm)** | Userscript for comparing requested ChatGPT model information with model tags returned by the service. |
 
-### 网站与笔记
+### 🌐 Web & research
 
-| 项目 | 内容 |
+| Project | What it does |
 | --- | --- |
-| [my-site](https://github.com/EpochTX/my-site) | 个人主页、项目目录、生活相册与网页工具 |
-| [Consumption Upgrade Study](https://github.com/EpochTX/Consumption-Upgrade-Study) | 居民消费结构升级的研究说明 |
-| [X-UI](https://github.com/EpochTX/X-UI) | X-UI 搭建笔记与配置文件 |
+| **[my-site](https://github.com/EpochTX/my-site)** | Personal homepage, project directory and lightweight web tools. |
+| **[Consumption Upgrade Study](https://github.com/EpochTX/Consumption-Upgrade-Study)** | Notes and empirical research on factors related to household consumption-structure upgrading. |
 
-使用与开发说明见各项目 README。
+> This profile intentionally lists **public repositories only**.
 
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=epochtx&label=views&color=grey&style=flat" alt="Profile views" />
