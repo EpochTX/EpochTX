@@ -1,0 +1,135 @@
+# Hong Kong banking rules - Quantumult X
+# Updated: 2026-10-08
+# DIRECT policy embedded; force-policy=direct can also be set in [filter_remote].
+# Hong Kong banking rules (retail and digital banks)
+# Updated: 2026-10-08
+# Policy-neutral rule list for Surge / Loon / Shadowrocket.
+# Matches bank-owned domains and verified bank-specific endpoints.
+# Scope excludes generic CDN, authentication, analytics, payment and cloud domains.
+# Some global bank domains (e.g. sc.com) are retained for compatibility.
+
+#   unrelated apps through the bank policy.
+
+# ==================== Major / retail banks ====================
+
+# HSBC Hong Kong / 香港汇丰
+host-suffix,hsbc.com.hk,direct
+host-suffix,hk.hsbc.com,direct
+# HSBC-owned HK cloud namespace used by HK services
+host-suffix,vam-hk.cloud1.vv1865.com,direct
+
+# Hang Seng Bank / 恒生银行
+host-suffix,hangseng.com,direct
+host-suffix,hangseng.com.hk,direct
+host-suffix,hangsengbank.com.hk,direct
+
+# Bank of China (Hong Kong) / 中国银行（香港）
+host-suffix,bochk.com,direct
+# BOC Credit Card (International) / BOCHK card services
+host-suffix,boccc.com.hk,direct
+# Known BOCHK market-data endpoints used by app/services
+host,bochk01.etnet.com.hk,direct
+host,bochk02.etnet.com.hk,direct
+host,bochkapp01.etnet.com.hk,direct
+host,bochk.yundzh.com,direct
+host,saaszhhk.yundzh.com,direct
+
+# Bank of East Asia / 东亚银行
+host-suffix,hkbea.com,direct
+
+# Standard Chartered Hong Kong / 渣打香港
+# sc.com is the bank's global domain; Hong Kong services are under sc.com/hk.
+host-suffix,sc.com,direct
+# Legacy/compatibility domain still referenced by SC Hong Kong
+host-suffix,sc.com.hk,direct
+
+# Citibank Hong Kong / 花旗香港
+host-suffix,citibank.com.hk,direct
+
+# DBS Hong Kong / 星展香港
+host-suffix,dbs.com.hk,direct
+
+# China Construction Bank (Asia) / 中国建设银行（亚洲）
+host-suffix,asia.ccb.com,direct
+
+# ICBC (Asia) / 中国工商银行（亚洲）
+host-suffix,icbcasia.com,direct
+
+# Bank of Communications (Hong Kong) / 交通银行（香港）
+host-suffix,bankcomm.com.hk,direct
+
+# China CITIC Bank International / 中信银行（国际） - inMotion
+host-suffix,cncbinternational.com,direct
+
+# CMB Wing Lung Bank / 招商永隆银行
+host-suffix,cmbwinglungbank.com,direct
+
+# OCBC Bank (Hong Kong) / 华侨银行（香港）
+host-suffix,ocbc.com.hk,direct
+# Legacy/mobile domain still used by OCBC Hong Kong
+host-suffix,ocbcwhhk.com,direct
+
+# Nanyang Commercial Bank / 南洋商业银行
+host-suffix,ncb.com.hk,direct
+
+# Chiyu Banking Corporation / 集友银行
+host-suffix,chiyubank.com,direct
+
+# Chong Hing Bank / 创兴银行
+host-suffix,chbank.com,direct
+
+# Dah Sing Bank / 大新银行
+host-suffix,dahsing.com,direct
+
+# Fubon Bank (Hong Kong) / 富邦银行（香港）
+host-suffix,fubonbank.com.hk,direct
+
+# Public Bank (Hong Kong) / 大众银行（香港）
+host-suffix,publicbank.com.hk,direct
+
+# Shanghai Commercial Bank / 上海商业银行
+host-suffix,shacombank.com.hk,direct
+
+# Bank of Shanghai (Hong Kong) / 上海银行（香港）
+host-suffix,bankofshanghai.com.hk,direct
+
+# Bank of Dongguan International / 东莞银行（国际）
+host-suffix,bodintl.com,direct
+
+# Tai Sang Bank / 大生银行
+host-suffix,taisangbank.com.hk,direct
+
+# Tai Yau Bank / 大有银行
+host-suffix,tybhk.com.hk,direct
+
+# ==================== Hong Kong digital banks ====================
+
+# EleBank / 象象银行 (formerly Airstar Bank / 天星银行)
+host-suffix,elebank.com,direct
+# Legacy domain retained for transition/back-end compatibility
+host-suffix,airstarbank.com,direct
+
+# Ant Bank (Hong Kong) / 蚂蚁银行（香港）
+host-suffix,antbank.hk,direct
+
+# Fusion Bank / 富融银行
+host-suffix,fusionbank.com,direct
+
+# livi bank / livi理慧银行
+host-suffix,livibank.com,direct
+
+# Mox Bank
+host-suffix,mox.com,direct
+
+# PAO Bank / 平安壹账通银行
+host-suffix,paob.com.hk,direct
+
+# WeLab Bank / 汇立银行
+host-suffix,welab.bank,direct
+
+# ZA Bank / 众安银行
+host-suffix,za.group,direct
+# ZA-owned investment / telemetry / static-resource domains used by ZA services
+host-suffix,zainvest.group,direct
+host-suffix,zajourney.com,direct
+host-suffix,zaticdn.com,direct
