@@ -1,6 +1,7 @@
 # HKBank.lsr
+# Legacy compatibility: canonical multi-client variants in rules/HKBank/
 # Hong Kong bank routing rules for Loon
-# Updated: 2026-08-08
+# Updated: 2026-10-08
 #
 # Scope:
 # - Hong Kong consumer-facing retail banks and digital banks.
@@ -20,6 +21,8 @@ DOMAIN-SUFFIX,vam-hk.cloud1.vv1865.com
 
 # Hang Seng Bank / 恒生银行
 DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,hangseng.com.hk
+DOMAIN-SUFFIX,hangsengbank.com.hk
 
 # Bank of China (Hong Kong) / 中国银行（香港）
 DOMAIN-SUFFIX,bochk.com
