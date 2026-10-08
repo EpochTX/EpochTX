@@ -1,6 +1,7 @@
 # AI unified routing rules - Quantumult X
-# Use [filter_remote] with force-policy=AI服务 (or your preferred policy).
+# Bind with force-policy=AI服务 in filter_remote
 # Updated: 2026-10-08
+# International AI services only; no mainland China AI products.
 
 # OpenAI / ChatGPT / Codex
 host-suffix,openai.com,AI服务
@@ -65,7 +66,8 @@ host-suffix,x.ai,AI服务
 host-suffix,grok.com,AI服务
 host,grok.x.com,AI服务
 
-# Perplexity / Poe / You / Phind / Felo
+# AI search / assistant / personal agents
+host-suffix,ai.com,AI服务
 host-suffix,perplexity.ai,AI服务
 host-suffix,perplexity.com,AI服务
 host-suffix,pplx.ai,AI服务
@@ -74,7 +76,8 @@ host-suffix,you.com,AI服务
 host-suffix,phind.com,AI服务
 host-suffix,felo.ai,AI服务
 
-# Meta AI / Llama
+# Meta Muse / Meta AI / Llama
+host-suffix,muse.ai,AI服务
 host-suffix,meta.ai,AI服务
 host,ai.meta.com,AI服务
 host,llama.meta.com,AI服务
@@ -108,53 +111,6 @@ host-suffix,runpod.io,AI服务
 host-suffix,novita.ai,AI服务
 host-suffix,hyperbolic.xyz,AI服务
 
-# China - DeepSeek / Qwen / ModelScope
-host-suffix,deepseek.com,AI服务
-host-suffix,deepseek.ai,AI服务
-host-suffix,qwen.ai,AI服务
-host-suffix,qwenlm.ai,AI服务
-host,tongyi.aliyun.com,AI服务
-host,dashscope.aliyuncs.com,AI服务
-host,bailian.console.aliyun.com,AI服务
-host-suffix,modelscope.cn,AI服务
-host-suffix,modelscope.ai,AI服务
-
-# China - Kimi / Doubao / MiniMax / Hailuo
-host-suffix,kimi.com,AI服务
-host-suffix,moonshot.cn,AI服务
-host-suffix,moonshot.ai,AI服务
-host,kimi.moonshot.cn,AI服务
-host-suffix,doubao.com,AI服务
-host-suffix,doubao.cn,AI服务
-host,ark.cn-beijing.volces.com,AI服务
-host-suffix,minimax.io,AI服务
-host-suffix,minimaxi.com,AI服务
-host-suffix,minimax.chat,AI服务
-host-suffix,hailuoai.video,AI服务
-host-suffix,hailuoai.com,AI服务
-
-# China - Zhipu / GLM / Baichuan / Yi
-host-suffix,z.ai,AI服务
-host-suffix,chatglm.cn,AI服务
-host-suffix,bigmodel.cn,AI服务
-host-suffix,zhipuai.cn,AI服务
-host-suffix,zhipuai.com,AI服务
-host-suffix,baichuan-ai.com,AI服务
-host-suffix,lingyiwanwu.com,AI服务
-host-suffix,01.ai,AI服务
-
-# China - Tencent / Baidu / iFlytek / SenseNova
-host,yuanbao.tencent.com,AI服务
-host,hunyuan.tencent.com,AI服务
-host,hunyuan.tencentcloudapi.com,AI服务
-host,yiyan.baidu.com,AI服务
-host,wenxin.baidu.com,AI服务
-host,qianfan.baidubce.com,AI服务
-host,aistudio.baidu.com,AI服务
-host,xinghuo.xfyun.cn,AI服务
-host,spark-api.xf-yun.com,AI服务
-host-suffix,sensenova.cn,AI服务
-
 # AI coding / agents / app builders
 host-suffix,cursor.com,AI服务
 host-suffix,cursor.sh,AI服务
@@ -172,15 +128,9 @@ host-suffix,v0.dev,AI服务
 host-suffix,tabnine.com,AI服务
 host-suffix,continue.dev,AI服务
 host-suffix,aider.chat,AI服务
-host-suffix,trae.ai,AI服务
-host-suffix,trae.com,AI服务
-host-suffix,marscode.com,AI服务
-host-suffix,marscode.cn,AI服务
 host-suffix,manus.im,AI服务
 host-suffix,manus.ai,AI服务
-host-suffix,flowith.io,AI服务
 host-suffix,genspark.ai,AI服务
-host-suffix,skywork.ai,AI服务
 
 # AI images / design / video / music / voice
 host-suffix,midjourney.com,AI服务
@@ -197,13 +147,9 @@ host-suffix,recraft.ai,AI服务
 host-suffix,recraft.app,AI服务
 host-suffix,magnific.ai,AI服务
 host-suffix,meshy.ai,AI服务
-host-suffix,tripo3d.ai,AI服务
 host-suffix,runwayml.com,AI服务
 host-suffix,runwayml.cloud,AI服务
 host-suffix,pika.art,AI服务
-host-suffix,klingai.com,AI服务
-host,klingai.kuaishou.com,AI服务
-host-suffix,pixverse.ai,AI服务
 host-suffix,lumalabs.ai,AI服务
 host-suffix,luma.ai,AI服务
 host-suffix,hedra.com,AI服务
