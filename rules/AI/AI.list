@@ -1,8 +1,8 @@
 # AI unified routing rules
 # Source: EpochTX/EpochTX/rules/AI
-# Updated: 2026-10-08
+# Updated: 2026-10-09
 # International AI services only. Mainland China AI products intentionally excluded.
-# DOMAIN/DOMAIN-SUFFIX only; no generic CDN, cloud, IP-ASN, or broad identity-provider rules.
+# Includes full blackmatrix7 OpenAI compatibility: domains, keyword, IP-CIDR and IP-ASN (shared services may be affected).
 # Bind this ruleset to AI服务 in your proxy client.
 
 # OpenAI / ChatGPT / Codex
@@ -174,3 +174,31 @@ DOMAIN-SUFFIX,andisearch.com
 DOMAIN-SUFFIX,komo.ai
 DOMAIN-SUFFIX,gamma.app
 DOMAIN-SUFFIX,napkin.ai
+
+# Complete blackmatrix7 OpenAI 35-rule compatibility; 22 rules not already in main collection.
+# Source: blackmatrix7/ios_rule_script rule/Surge/OpenAI/OpenAI.list (2025-06-06)
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-KEYWORD,openai
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
+IP-ASN,20473,no-resolve
+
+# Additional login challenge host (not among the 35 blackmatrix7 OpenAI rules)
+DOMAIN-SUFFIX,challenges.cloudflare.com
