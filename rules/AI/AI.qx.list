@@ -1,6 +1,6 @@
 # AI unified routing rules - Quantumult X
 # Bind with force-policy=AI服务 in filter_remote
-# Updated: 2026-10-08
+# Updated: 2026-10-09
 # International AI services only; no mainland China AI products.
 
 # OpenAI / ChatGPT / Codex
@@ -172,3 +172,31 @@ host-suffix,andisearch.com,AI服务
 host-suffix,komo.ai,AI服务
 host-suffix,gamma.app,AI服务
 host-suffix,napkin.ai,AI服务
+
+# Complete blackmatrix7 OpenAI 35-rule compatibility; 22 previously missing rules.
+# Source: blackmatrix7/ios_rule_script rule/QuantumultX/OpenAI/OpenAI.list (2025-06-06)
+host,browser-intake-datadoghq.com,AI服务
+host,static.cloudflareinsights.com,AI服务
+host-suffix,algolia.net,AI服务
+host-suffix,api.statsig.com,AI服务
+host-suffix,auth0.com,AI服务
+host-suffix,client-api.arkoselabs.com,AI服务
+host-suffix,events.statsigapi.net,AI服务
+host-suffix,featuregates.org,AI服务
+host-suffix,host.livekit.cloud,AI服务
+host-suffix,identrust.com,AI服务
+host-suffix,intercom.io,AI服务
+host-suffix,intercomcdn.com,AI服务
+host-suffix,launchdarkly.com,AI服务
+host-suffix,observeit.net,AI服务
+host-suffix,segment.io,AI服务
+host-suffix,sentry.io,AI服务
+host-suffix,stripe.com,AI服务
+host-suffix,turn.livekit.cloud,AI服务
+host-keyword,openai,AI服务
+ip-cidr,24.199.123.28/32,AI服务
+ip-cidr,64.23.132.171/32,AI服务
+ip-asn,20473,AI服务
+
+# Additional login challenge host (not among the 35 blackmatrix7 OpenAI rules)
+host-suffix,challenges.cloudflare.com,AI服务
