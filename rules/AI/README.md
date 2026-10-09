@@ -1,6 +1,6 @@
 # AI 综合分流规则
 
-统一收录海外及国际化 AI：通用 AI、Agent、编程助手、API/模型平台、AI 搜索、图像、视频、音乐、语音服务。**中国大陆 AI 不纳入本策略**。更新：2026-10-08。
+统一收录海外及国际化 AI：通用 AI、Agent、编程助手、API/模型平台、AI 搜索、图像、视频、音乐、语音服务。**中国大陆 AI 不纳入本策略**。更新：2026-10-09。
 
 ## 文件与平台
 
@@ -34,14 +34,14 @@ Quantumult X `[filter_remote]`：`https://raw.githubusercontent.com/EpochTX/Epoc
 
 ## 范围和原则
 
-- 共 **146 条**不重复的域名匹配规则（12 个分类）。包括 OpenAI/ChatGPT/Codex、Claude、Gemini/AI Studio/NotebookLM、Copilot、Grok、Meta Muse、Meta AI、Perplexity、Poe、AI.com、Cursor、Windsurf、Hugging Face、OpenRouter、Midjourney、Runway、Suno、ElevenLabs 等国际服务。
-- 涵盖 ChatGPT 的静态和图片附件域名 `oaistatic.com`、`oaiusercontent.com`、`cdn.openaimerge.com`，以及其它已知的专属资源域名。主要参考 [OpenAI 网络建议](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps) 和 [blackmatrix7 OpenAI 规则](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list)，但**没有无差别照搬**泛用的第三方 CDN、统计、认证或 ASN 规则。
-- 只用精确域名及域名后缀；不包含 `google.com`、`googleapis.com`、`microsoft.com`、`bing.com`、`github.com`、`cloudflare.com`、`stripe.com`、`amazonaws.com` 等跨服务域名；它们可能使非 AI 业务误命中。
+- 共 **169 条**不重复规则（原 146 条 + blackmatrix7 OpenAI 缺失的 22 条 + Cloudflare 验证域名 1 条；保留原 12 类及兼容扩展）。包括 OpenAI/ChatGPT/Codex、Claude、Gemini/AI Studio/NotebookLM、Copilot、Grok、Meta Muse、Meta AI、Perplexity、Poe、AI.com、Cursor、Windsurf、Hugging Face、OpenRouter、Midjourney、Runway、Suno、ElevenLabs 等国际服务。
+- 涵盖 ChatGPT 的静态和图片附件域名 `oaistatic.com`、`oaiusercontent.com`、`cdn.openaimerge.com`，以及其它已知的专属资源域名。主要参考 [OpenAI 网络建议](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps) 和 [blackmatrix7 OpenAI 规则](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list)，已按用户要求**完整补齐其全部 35 条规则**（旧文件已有 13 条，本次新增 22 条），另补充 `challenges.cloudflare.com` 供 Cloudflare 登录验证。
+- 现在包含精确域名、域名后缀、`DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-ASN`。blackmatrix7 原规则包含 `stripe.com`、`auth0.com`、`sentry.io`、`IP-ASN,20473` 等共享平台或大范围 IP 段，**可能使非 AI 服务流量被错误分到 AI服务**。这是完全兼容旧规则的明确代价。
 - **域名规则无法识别 URL 路径**。例如第三方搜索图片链接仍可能由外部图床提供，不一定命中「AI服务」。有些产品的登录、验证码、支付流程依赖共享平台域名，默认仍走其它分流。
 - 中国大陆 AI 服务（包括 DeepSeek、通义千问、Kimi、豆包、智谱 GLM、MiniMax、腾讯元宝、文心、科大讯飞、Trae、MarsCode、Kling、PixVerse 等）不包含在此规则集中，仍由现有客户端的其它规则及兜底策略处理；**不代表一定直连**。
 - 规则集只决定**往哪个策略组走**，不保证节点带宽、丢包、IP 质量或图片下载速度。排查图片卡顿应查看请求记录中的实际域名、命中规则、出口节点、连接/下载耗时。
 - 服务随时调整域名，不能保证囊括互联网上的全部 AI。已停用的历史业务和未经核实的共享域名不做盲目收录。
-- 对旧版「智能助理」使用的 blackmatrix7 OpenAI.list（35 条）完成逐条比对。明确补入当前为独立 AI Agent 的 `ai.com`，新增 Meta Muse 官方域名 `muse.ai`（含其子域名）；旧规则中的通用埋点、验证码、支付、身份提供商、共享 CDN、IP-ASN 与旧 IP 地址未整体照搬，以降低误分流。
+- 已逐条比对并完整纳入旧版「智能助理」的 [blackmatrix7 OpenAI.list（35 条）](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list)：已有 13 条，缺失 22 条全部追加。新增兼容规则统一放在文件末尾的 `blackmatrix7` 小节，便于日后审计、回滚。另独立追加 `challenges.cloudflare.com`（不属于这 35 条），用于 Cloudflare Challenge。
 - 多平台文件来自相同域名数据，调整时应一起更新，避免不同客户端策略漂移。
 
 ## 优先级
