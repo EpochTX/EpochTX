@@ -1,6 +1,6 @@
 # AI unified routing rules - Quantumult X
 # Bind with force-policy=AI服务 in filter_remote
-# Updated: 2026-10-09
+# Updated: 2026-10-23 (Muse moved to independent agent rules)
 # International AI services only; no mainland China AI products.
 
 # OpenAI / ChatGPT / Codex
@@ -76,8 +76,7 @@ host-suffix,you.com,AI服务
 host-suffix,phind.com,AI服务
 host-suffix,felo.ai,AI服务
 
-# Meta Muse / Meta AI / Llama
-host-suffix,muse.ai,AI服务
+# Meta AI / Llama (Muse agent is now in rules/Agent)
 host-suffix,meta.ai,AI服务
 host,ai.meta.com,AI服务
 host,llama.meta.com,AI服务

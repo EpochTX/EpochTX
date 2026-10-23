@@ -1,6 +1,6 @@
 # AI unified routing rules
 # Source: EpochTX/EpochTX/rules/AI
-# Updated: 2026-10-09
+# Updated: 2026-10-23 (Muse moved to independent agent rules)
 # International AI services only. Mainland China AI products intentionally excluded.
 # Includes full blackmatrix7 OpenAI compatibility: domains, keyword, IP-CIDR and IP-ASN (shared services may be affected).
 # Bind this ruleset to AI服务 in your proxy client.
@@ -79,8 +79,7 @@ payload:
   - DOMAIN-SUFFIX,phind.com
   - DOMAIN-SUFFIX,felo.ai
 
-  # Meta Muse / Meta AI / Llama
-  - DOMAIN-SUFFIX,muse.ai
+  # Meta AI / Llama (Muse agent is now in rules/Agent)
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN,ai.meta.com
   - DOMAIN,llama.meta.com

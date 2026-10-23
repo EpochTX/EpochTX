@@ -1,6 +1,6 @@
 # AI 综合分流规则
 
-统一收录海外及国际化 AI：通用 AI、Agent、编程助手、API/模型平台、AI 搜索、图像、视频、音乐、语音服务。**中国大陆 AI 不纳入本策略**。更新：2026-10-09。
+统一收录海外及国际化 AI：通用 AI、Agent、编程助手、API/模型平台、AI 搜索、图像、视频、音乐、语音服务。**中国大陆 AI 不纳入本策略**。更新：2026-10-23。
 
 ## 文件与平台
 
@@ -34,7 +34,7 @@ Quantumult X `[filter_remote]`：`https://raw.githubusercontent.com/EpochTX/Epoc
 
 ## 范围和原则
 
-- 共 **169 条**不重复规则（原 146 条 + blackmatrix7 OpenAI 缺失的 22 条 + Cloudflare 验证域名 1 条；保留原 12 类及兼容扩展）。包括 OpenAI/ChatGPT/Codex、Claude、Gemini/AI Studio/NotebookLM、Copilot、Grok、Meta Muse、Meta AI、Perplexity、Poe、AI.com、Cursor、Windsurf、Hugging Face、OpenRouter、Midjourney、Runway、Suno、ElevenLabs 等国际服务。
+- 共 **168 条**不重复规则（原 146 条 + blackmatrix7 OpenAI 缺失的 22 条 + Cloudflare 验证域名 1 条，扣除已迁移的 Muse 规则 1 条；保留原 12 类及兼容扩展）。包括 OpenAI/ChatGPT/Codex、Claude、Gemini/AI Studio/NotebookLM、Copilot、Grok、Meta AI、Perplexity、Poe、AI.com、Cursor、Windsurf、Hugging Face、OpenRouter、Midjourney、Runway、Suno、ElevenLabs 等国际服务。
 - 涵盖 ChatGPT 的静态和图片附件域名 `oaistatic.com`、`oaiusercontent.com`、`cdn.openaimerge.com`，以及其它已知的专属资源域名。主要参考 [OpenAI 网络建议](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps) 和 [blackmatrix7 OpenAI 规则](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list)，已按用户要求**完整补齐其全部 35 条规则**（旧文件已有 13 条，本次新增 22 条），另补充 `challenges.cloudflare.com` 供 Cloudflare 登录验证。
 - 现在包含精确域名、域名后缀、`DOMAIN-KEYWORD`、`IP-CIDR` 和 `IP-ASN`。blackmatrix7 原规则包含 `stripe.com`、`auth0.com`、`sentry.io`、`IP-ASN,20473` 等共享平台或大范围 IP 段，**可能使非 AI 服务流量被错误分到 AI服务**。这是完全兼容旧规则的明确代价。
 - **域名规则无法识别 URL 路径**。例如第三方搜索图片链接仍可能由外部图床提供，不一定命中「AI服务」。有些产品的登录、验证码、支付流程依赖共享平台域名，默认仍走其它分流。
@@ -47,3 +47,7 @@ Quantumult X `[filter_remote]`：`https://raw.githubusercontent.com/EpochTX/Epoc
 ## 优先级
 
 必须放在 Google、Microsoft、游戏平台、国内通用规则及 FINAL/MATCH 之前。原有 `AI服务` 策略组名称保持不变，无需新增节点组。
+
+## 2026-10-23 Agent 独立策略
+
+已把 `muse.ai` 从本 AI 综合规则中分离至 [`../Agent`](../Agent/README.md)，并为 Hark 新增 `hark.com`；两者统一绑定客户端独立的 `agent` 策略组。其他 AI 域名与 OpenAI 兼容规则均不变。`meta.ai`、`ai.meta.com` 是 Meta 通用服务，仍保留在 AI 规则，避免误伤非 Muse 流量。
