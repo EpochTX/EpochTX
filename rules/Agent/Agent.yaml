@@ -1,5 +1,5 @@
 # Independent personal agent routing (Mihomo / Clash Meta)
-# 2026-10-23: Only Muse and Hark. Bind this rule-provider to agent.
+# 2026-10-23: Only Muse and Hark. Bind this rule-provider to Agent.
 payload:
   - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,hark.com

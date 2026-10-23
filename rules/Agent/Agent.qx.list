@@ -1,4 +1,4 @@
 # Independent personal agent routing (Quantumult X)
-# 2026-10-23: Only Muse and Hark; bind to policy agent.
-host-suffix,muse.ai,agent
-host-suffix,hark.com,agent
+# 2026-10-23: Only Muse and Hark; bind to policy Agent.
+host-suffix,muse.ai,Agent
+host-suffix,hark.com,Agent

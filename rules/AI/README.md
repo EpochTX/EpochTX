@@ -50,4 +50,4 @@ Quantumult X `[filter_remote]`：`https://raw.githubusercontent.com/EpochTX/Epoc
 
 ## 2026-10-23 Agent 独立策略
 
-已把 `muse.ai` 从本 AI 综合规则中分离至 [`../Agent`](../Agent/README.md)，并为 Hark 新增 `hark.com`；两者统一绑定客户端独立的 `agent` 策略组。其他 AI 域名与 OpenAI 兼容规则均不变。`meta.ai`、`ai.meta.com` 是 Meta 通用服务，仍保留在 AI 规则，避免误伤非 Muse 流量。
+已把 `muse.ai` 从本 AI 综合规则中分离至 [`../Agent`](../Agent/README.md)，并为 Hark 新增 `hark.com`；两者统一绑定客户端独立的 `Agent` 策略组。其他 AI 域名与 OpenAI 兼容规则均不变。`meta.ai`、`ai.meta.com` 是 Meta 通用服务，仍保留在 AI 规则，避免误伤非 Muse 流量。

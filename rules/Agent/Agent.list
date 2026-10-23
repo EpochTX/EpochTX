@@ -1,5 +1,5 @@
 # Independent personal agent routing (Surge / Loon / Shadowrocket)
-# 2026-10-23: Only Muse and Hark; bind to client policy group 'agent'.
+# 2026-10-23: Only Muse and Hark; bind to client policy group 'Agent'.
 # Do not include generic meta.ai: shared by other Meta AI products.
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,hark.com
