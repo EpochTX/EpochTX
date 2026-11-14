@@ -199,6 +199,3 @@ payload:
   - IP-CIDR,24.199.123.28/32
   - IP-CIDR,64.23.132.171/32
   - IP-ASN,20473
-
-  # Additional login challenge host (not among blackmatrix7 OpenAI's 35 rules)
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
